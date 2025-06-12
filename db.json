@@ -1,13 +1,58 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 55555555555" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
+  "registBuying": {
+  "code": "0000",
+  "status": "SUCCESS",
+  "msg": "処理が正常に完了しました。",
+  "transid": "ABC123456",
+  "result": {
+    "aid": "member001",
+    "usePoint": 150.5,
+    "givePoints": [
+      {
+        "pointHistId": "ph001",
+        "pointType": "typeA",
+        "point": 50.0,
+        "scode": "biz001"
+      },
+      {
+        "pointHistId": "ph002",
+        "pointType": "typeB",
+        "point": 30.0,
+        "scode": "biz002"
+      }
+    ],
+    "totalBalance": 1200.75,
+    "balances": [
+      {
+        "pointType": "typeA",
+        "balance": 800.5,
+        "emode": "fixed",
+        "point": 100.0,
+        "breakpoint": "2025-07-01T00:00:00Z",
+        "breakpoint_date": "2025-07-01"
+      },
+      {
+        "pointType": "typeB",
+        "balance": 400.25,
+        "emode": "rolling",
+        "point": 50.0,
+        "breakpoint": "2025-08-15T00:00:00Z",
+        "breakpoint_date": "2025-08-15"
+      }
+    ]
+  }
+},
+  "usePoint": {
+  "code": "000-000-000",
+  "status": "408",
+  "msg": "正常に処理が完了しました。",
+  "transid": "TX987654321",
+  "aid": "A123456789",
+  "hid": "H20240611001",
+  "ptype": "通常ポイント",
+  "point": 120,
+  "balance": 880
+},
   "profile": {
     "name": "typicode"
   }
